@@ -1,0 +1,63 @@
+/* Custom Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* Custom Button */
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #14b8a6; /* Tailwind teal-500 */
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #0d9488; /* Tailwind teal-600 */
+  transform: translateY(-2px);
+}
+
+/* Skill Badge */
+.skill-badge {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #14b8a6; /* Tailwind teal-500 */
+  color: #fff;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  font-weight: 600;
+}
+
+.skill-badge:hover {
+  transform: scale(1.1);
+}
+
+/* Project Card */
+.project-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
